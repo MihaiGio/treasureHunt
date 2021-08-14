@@ -17,6 +17,8 @@
 		<java.version>16</java.version>
 		<lombok.version>1.18.20</lombok.version>
 		<springfox.version>3.0.0</springfox.version>
+		<maven.compiler.source>16</maven.compiler.source>
+		<maven.compiler.target>16</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
