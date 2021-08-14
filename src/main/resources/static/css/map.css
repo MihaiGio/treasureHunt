@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 90%;
+}
+
+#mapid {
+  width: 100%;
+  height: 600px;
+  height: 100vh;
+}

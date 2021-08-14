@@ -3,13 +3,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Hello</title>
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
     <link href="#" th:replace="common :: bootstrap-css"/>
     <link href="#" th:replace="common :: leaflet-css"/>
+    <link href="#" th:replace="common :: map-css"/>
 </head>
 <body>
-<p th:replace="header :: header-info"></p>
 
-<div id="mapid" style="width: 1650px; height: 800px; position: relative;"
+<div id="mapid"
      class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
      tabindex="0">
     <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
@@ -74,7 +75,6 @@
 </div>
 
 
-<p th:replace="footer :: footer-info"></p>
 <script src="#" th:replace="common :: bootstrap-js"></script>
 <script src="#" th:replace="common :: leaflet-js"></script>
 <script src="#" th:replace="common :: map-js"></script>
