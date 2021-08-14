@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <link href="#" th:replace="common :: bootstrap-css"/>
+    <link href="#" th:replace="common :: leaflet-css"/>
+</head>
+<body>
+<p th:replace="header :: header-info"></p>
+
+<div id="mapid" style="width: 1650px; height: 800px; position: relative;"
+     class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+     tabindex="0">
+    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+        <div class="leaflet-pane leaflet-tile-pane">
+            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                <div class="leaflet-tile-container leaflet-zoom-animated"
+                     style="z-index: 16; transform: translate3d(165px, 101px, 0px) scale(0.25);"></div>
+                <div class="leaflet-tile-container leaflet-zoom-animated"
+                     style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                                                                               role="presentation"
+                                                                                               src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/11/1023/680?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"
+                                                                                               class="leaflet-tile leaflet-tile-loaded"
+                                                                                               style="width: 512px; height: 512px; transform: translate3d(65px, -329px, 0px); opacity: 1;"><img
+                        alt="" role="presentation"
+                        src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/11/1023/681?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"
+                        class="leaflet-tile leaflet-tile-loaded"
+                        style="width: 512px; height: 512px; transform: translate3d(65px, 183px, 0px); opacity: 1;"><img
+                        alt="" role="presentation"
+                        src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/11/1022/680?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"
+                        class="leaflet-tile leaflet-tile-loaded"
+                        style="width: 512px; height: 512px; transform: translate3d(-447px, -329px, 0px); opacity: 1;"><img
+                        alt="" role="presentation"
+                        src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/11/1024/680?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"
+                        class="leaflet-tile leaflet-tile-loaded"
+                        style="width: 512px; height: 512px; transform: translate3d(577px, -329px, 0px); opacity: 1;"><img
+                        alt="" role="presentation"
+                        src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/11/1022/681?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"
+                        class="leaflet-tile leaflet-tile-loaded"
+                        style="width: 512px; height: 512px; transform: translate3d(-447px, 183px, 0px); opacity: 1;"><img
+                        alt="" role="presentation"
+                        src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/11/1024/681?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw"
+                        class="leaflet-tile leaflet-tile-loaded"
+                        style="width: 512px; height: 512px; transform: translate3d(577px, 183px, 0px); opacity: 1;">
+                </div>
+            </div>
+        </div>
+        <div class="leaflet-pane leaflet-shadow-pane"></div>
+        <div class="leaflet-pane leaflet-overlay-pane"></div>
+        <div class="leaflet-pane leaflet-marker-pane"></div>
+        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+        <div class="leaflet-pane leaflet-popup-pane"></div>
+        <div class="leaflet-proxy leaflet-zoom-animated"
+             style="transform: translate3d(524011px, 348689px, 0px) scale(2048);"></div>
+    </div>
+    <div class="leaflet-control-container">
+        <div class="leaflet-top leaflet-left">
+            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#"
+                                                                             title="Zoom in" role="button"
+                                                                             aria-label="Zoom in">+</a><a
+                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
+            </div>
+        </div>
+        <div class="leaflet-top leaflet-right"></div>
+        <div class="leaflet-bottom leaflet-left"></div>
+        <div class="leaflet-bottom leaflet-right">
+            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                                                        title="A JS library for interactive maps">Leaflet</a>
+                | Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery ©
+                <a href="https://www.mapbox.com/">Mapbox</a></div>
+        </div>
+    </div>
+</div>
+
+
+<p th:replace="footer :: footer-info"></p>
+<script src="#" th:replace="common :: bootstrap-js"></script>
+<script src="#" th:replace="common :: leaflet-js"></script>
+<script src="#" th:replace="common :: map-js"></script>
+</body>
+</html>
